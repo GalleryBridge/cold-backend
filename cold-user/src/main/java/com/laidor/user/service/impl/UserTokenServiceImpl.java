@@ -15,7 +15,7 @@ import java.util.Date;
  * @Description:
  * @Date:2025/1/8 上午 09:27
  */
-@Service("UserTokenService")
+@Service("userTokenService")
 public class UserTokenServiceImpl extends ServiceImpl<UserTokenDao, UserTokenEntity> implements UserTokenService {
     //12小时后过期
     private final static int EXPIRE = 3600 * 12;

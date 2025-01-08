@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * @Description:
  * @Date:2025/1/8 上午 09:22
  */
-@Service("UserService")
+@Service("userService")
 public class UserServiceImpl extends ServiceImpl<UserDao, UserEntity> implements UserService {
 
     /**

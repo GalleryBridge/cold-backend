@@ -4,11 +4,6 @@ import com.laidor.common.user.entity.UserEntity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
-/**
- * @author xiongzhigang
- * @date 2021-01-01 15:23
- * @description
- */
 @Mapper
 public interface UserDao extends BaseMapper<UserEntity> {
     /**
