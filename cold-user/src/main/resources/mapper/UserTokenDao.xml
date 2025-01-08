@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.laidor.common.user.dao.UserTokenDao">
+
+	<delete id="deleteByToken">
+		delete from sys_user_token where token = #{token} and expire_time >= now()
+	</delete>
+
+	<select id="queryByToken" resultType="com.laidor.common.user.entity.UserTokenEntity">
+		select * from sys_user_token where token = #{token}
+	</select>
+
+</mapper>

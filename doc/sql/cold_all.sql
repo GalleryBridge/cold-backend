@@ -42,7 +42,7 @@ use `cold-server`;
 DROP TABLE IF EXISTS `cold_company`;
 CREATE TABLE `cold_company`
 (
-    `id`              varchar(50)  NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+    `id`              varchar(50)  NOT NULL COMMENT '自增ID',
     `company`         varchar(100) NOT NULL COMMENT '公司名称',
     `abbreviation`    varchar(50) COMMENT '公司简称',
     `companyNumber`   varchar(50) COMMENT '企业编号',
@@ -65,7 +65,7 @@ CREATE TABLE `cold_company`
 DROP TABLE IF EXISTS `cold_warehouse`;
 CREATE TABLE `cold_warehouse`
 (
-    `id`            varchar(50) NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+    `id`            varchar(50) NOT NULL COMMENT '自增ID',
     `houseCode`     varchar(50) NOT NULL COMMENT '仓库编码',
     `houseName`     varchar(100) COMMENT '仓库名称',
     `houseAddress`  varchar(255) COMMENT '仓库地址',
@@ -88,7 +88,7 @@ CREATE TABLE `cold_warehouse`
 DROP TABLE IF EXISTS `cold_host`;
 CREATE TABLE `cold_host`
 (
-    `id`         varchar(50) NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+    `id`         varchar(50) NOT NULL COMMENT '自增ID',
     `hostCode`   varchar(50) NOT NULL COMMENT '主机编码',
     `hostName`   varchar(50) COMMENT '主机名称',
     `houseId`    varchar(50) COMMENT '仓库ID',
@@ -107,7 +107,7 @@ CREATE TABLE `cold_host`
 DROP TABLE IF EXISTS `cold_monitor`;
 CREATE TABLE `cold_monitor`
 (
-    `id`           varchar(50) NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+    `id`           varchar(50) NOT NULL COMMENT '自增ID',
     `userName`     varchar(50) COMMENT '人员姓名',
     `userPhone`    varchar(20) COMMENT '人员电话',
     `monitorState` varchar(20) COMMENT '预警类型，0:温湿度，1:温度，2:湿度',
