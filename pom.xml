@@ -13,6 +13,7 @@
         <module>cold-common</module>
         <module>cold-eureka</module>
         <module>cold-user</module>
+        <module>cold-geteway</module>
     </modules>
 
     <properties>

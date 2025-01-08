@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: cold-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 200
+    min-spare-threads: 30
+  connection-timeout: 30000ms
+  servlet:
+    context-path: /cold
